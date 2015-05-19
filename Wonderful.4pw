@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Project defaultApplication="400358049" gstVersion="23308" version="3.1">
+<Project defaultApplication="400358049" gstVersion="2330a" version="3.1">
   <Settings>
     <DynamicProperties version="2">
       <DynamicProperty description="High-DPI Icon (72x72 px) path" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon-hdpi (72x72 px)" name="icon-hdpi" readOnly="false" type="FILE"/>
@@ -9,13 +9,26 @@
       <DynamicProperty description="Extra Extra High-DPI Icon (144x144 px) path" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon-xxhdpi (144x144 px)" name="icon-xxhdpi" readOnly="false" type="FILE"/>
       <DynamicProperty description="120x120 pixel icon (used for home screen)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (120x120 px)" name="icon120x120" readOnly="false" type="FILE"/>
       <DynamicProperty description="152x152 pixel icon (used for home screen)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (152x152 px)" name="icon152x152" readOnly="false" type="FILE"/>
+      <DynamicProperty description="180x180 pixel icon (used for home screen)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (180x180 px)" name="icon180x180" readOnly="false" type="FILE"/>
       <DynamicProperty description="29x29 pixel icon (used for settings)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (29x29 px)" name="icon29x29" readOnly="false" type="FILE"/>
       <DynamicProperty description="40x40 pixel icon (used for settings)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (40x40 px)" name="icon40x40" readOnly="false" type="FILE"/>
       <DynamicProperty description="58x58 pixel icon (used for settings)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (58x58 px)" name="icon58x58" readOnly="false" type="FILE"/>
       <DynamicProperty description="60x60 pixel icon (used for settings)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (60x60 px)" name="icon60x60" readOnly="false" type="FILE"/>
       <DynamicProperty description="76x76 pixel icon (used for home screen)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (76x76 px)" name="icon76x76" readOnly="false" type="FILE"/>
       <DynamicProperty description="80x80 pixel icon (used for home screen)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (80x80 px)" name="icon80x80" readOnly="false" type="FILE"/>
-      <DynamicProperty description="Application&apos;s launch screen" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen" name="launchScreen" readOnly="false" type="FILE"/>
+      <DynamicProperty description="87x87 pixel icon (used for home screen)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (87x87 px)" name="icon87x87" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPhone 5" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (640x1136 px)" name="launchScreen" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPad (landcape)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (1024x768 px)" name="launchScreen1024x768" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPhone 6+ (portrait)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (1242x2208 px)" name="launchScreen1242x2208" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPhone 6 (landscape)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (1334x750 px)" name="launchScreen1334x750" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPad (portrait)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (1536x2048 px)" name="launchScreen1536x2048" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPad (landscape)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (2048x1536 px)" name="launchScreen2048x1536" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPhone 6+ (landscape)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (2208x1242 px)" name="launchScreen2208x1242" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPhone" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (320x480 px)" name="launchScreen320x480" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPhone 4" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (640x960 px)" name="launchScreen640x960" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPhone 6 (portrait)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (750x1334 px)" name="launchScreen750x1334" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPad (portrait)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (768x1024 px)" name="launchScreen768x1024" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen XIB file (Created from Xcode)" editorInfo="filters:*.xib;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen XIB" name="launchScreenXib" readOnly="false" type="FILE"/>
       <DynamicProperty description="Package identifier" initialValue="" isDefaultInherited="false" isHidden="false" label="ID" name="packageId" readOnly="false" type="TEXT"/>
       <DynamicProperty description="Label of the package" initialValue="" isDefaultInherited="false" isHidden="false" label="Label" name="packageLabel" readOnly="false" type="TEXT"/>
       <DynamicProperty description="Name of the package" initialValue="" isDefaultInherited="false" isHidden="false" label="Name" name="packageName" readOnly="false" type="TEXT"/>
@@ -25,10 +38,10 @@
       <DynamicProperty description="Requirements" editorInfo="title:Requirements;description:iOS Requirements;icon:checkbox_checked;contains:accelerometer|auto-focus-camera|bluetooth-le|front-facing-camera|gps|gyroscope|location-services|still-camera|telephony|video-camera|wifi" initialValue="accelerometer||auto-focus-camera||bluetooth-le||front-facing-camera||gps||gyroscope||location-services||still-camera||telephony||video-camera||wifi" isDefaultInherited="false" isHidden="false" label="Requirements" name="required" readOnly="false" type="MULTIPLEBOOLEAN"/>
       <DynamicPropertyGroup collapsed="false" description="Android" label="Android" name="AndroidGroup" properties="packageVersionName;icon-ldpi;icon-mdpi;icon-hdpi;icon-xhdpi;icon-xxhdpi;permissions"/>
       <DynamicPropertyGroup collapsed="false" description="Package" label="Package" name="PackageGroup" properties="packageId;packageName;packageLabel;packageVersion"/>
-      <DynamicPropertyGroup collapsed="false" description="iOS" label="iOS" name="iOSGroup" properties="launchScreen;icon29x29;icon40x40;icon58x58;icon60x60;icon76x76;icon80x80;icon120x120;icon152x152;required"/>
+      <DynamicPropertyGroup collapsed="false" description="iOS" label="iOS" name="iOSGroup" properties="launchScreen320x480;launchScreen640x960;launchScreen;launchScreen750x1334;launchScreen1334x750;launchScreen1242x2208;launchScreen2208x1242;launchScreen768x1024;launchScreen1024x768;launchScreen1536x2048;launchScreen2048x1536;launchScreenXib;icon29x29;icon40x40;icon58x58;icon60x60;icon76x76;icon80x80;icon87x87;icon120x120;icon152x152;icon180x180;required"/>
     </DynamicProperties>
     <NodeInfos version="1">
-      <NodeInfo mimeType="pm/package" properties="packageId;packageLabel;packageName;packageVersion;packageVersionName;launchScreen;icon29x29;icon40x40;icon58x58;icon60x60;icon76x76;icon80x80;icon120x120;icon152x152;icon-ldpi;icon-mdpi;icon-hdpi;icon-xhdpi;icon-xxhdpi;permissions;required"/>
+      <NodeInfo mimeType="pm/package" properties="packageId;packageLabel;packageName;packageVersion;packageVersionName;launchScreen320x480;launchScreen640x960;launchScreen;launchScreen750x1334;launchScreen1334x750;launchScreen1242x2208;launchScreen2208x1242;launchScreen768x1024;launchScreen1024x768;launchScreen1536x2048;launchScreen2048x1536;launchScreenXib;icon29x29;icon40x40;icon58x58;icon60x60;icon76x76;icon80x80;icon87x87;icon120x120;icon152x152;icon180x180;icon-ldpi;icon-mdpi;icon-hdpi;icon-xhdpi;icon-xxhdpi;permissions;required"/>
     </NodeInfos>
   </Settings>
   <LanguageList version="1.0"/>
@@ -84,8 +97,9 @@
     </Package>
   </Group>
   <Group environment="filelist:FGLPROFILE=$(ProjectDir)/config/fglprofile||dirlist:DBPATH=$(ProjectDir)/database;$(DBPATH)" label="Project">
-    <Application dependencies="159917928||212784684||362164715||455109296" environment="dirlist:FGLIMAGEPATH=$(ProjectDir)/images;$(FGLIMAGEPATH)" id="400358049" label="Application">
-      <File filePath="src/main.4gl"/>
+    <Application dependencies="159917928||212784684||362164715||455109296" environment="dirlist:FGLIMAGEPATH=$(ProjectDir)/images;$(FGLIMAGEPATH);C:/Users/David/Desktop/Wonderful/web" id="400358049" label="Application">
+      <File filePath="natvie/main.4fd"/>
+      <File filePath="natvie/main.4gl"/>
     </Application>
     <Library id="362164715" label="Config">
       <File filePath="config/fglprofile"/>
