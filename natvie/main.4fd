@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="23200" gstVersion="2330a" name="managedform" uid="{705ecb52-f60d-47d6-9d7a-f63863dff715}">
+  <AGSettings>
+    <DynamicProperties version="2">
+      <DynamicProperty BRDynamicPropertyType="false" isDefaultInherited="false" isHidden="false" name="webcomponent.App" readOnly="false" type=""/>
+      <DynamicProperty BRDynamicPropertyType="false" isDefaultInherited="false" isHidden="false" name="webcomponent.SquareApp" readOnly="false" type=""/>
+      <DynamicProperty BRDynamicPropertyType="false" description="Items" initialValue="" isDefaultInherited="false" isHidden="false" label="items" name="webcomponent.SquareApp.items" readOnly="false" type="TEXT"/>
+      <DynamicProperty BRDynamicPropertyType="false" initialValue="" isDefaultInherited="false" isHidden="false" label="Color" name="webcomponent.demo.color" readOnly="false" type="TEXT"/>
+      <DynamicProperty BRDynamicPropertyType="false" isDefaultInherited="false" isHidden="false" name="webcomponent.index" readOnly="false" type=""/>
+      <DynamicProperty BRDynamicPropertyType="false" description="Items" initialValue="" isDefaultInherited="false" isHidden="false" label="items" name="webcomponent.orderSystem.items" readOnly="false" type="TEXT"/>
+    </DynamicProperties>
+    <NodeInfos version="1">
+      <NodeInfo mimeType="modFD/WebComponent" properties="webcomponent.index;webcomponent.demo.color;webcomponent.App;webcomponent.SquareApp;webcomponent.SquareApp.items;webcomponent.orderSystem.items"/>
+    </NodeInfos>
+  </AGSettings>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="rec" order="" uid="{12b2499a-0c71-41ef-bcf2-f9ea931c211a}" where="">
+    <RecordField colName="" fieldIdRef="1" name="web1" sqlTabName="" table_alias_name="" uid="{ff44f7ee-fde0-4d9c-a389-1f0a53a9fe86}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="51" image="36x36" name="form" text="企业移动化">
+    <Grid gridHeight="20" gridWidth="51" name="grid1" posX="0" posY="0">
+      <WebComponent colName="" componentType="index" fieldId="1" gridHeight="20" gridWidth="50" height="500" name="web1" posX="1" posY="0" scrollBars="none" sizePolicy="fixed" sqlTabName="" stretch="both" tabIndex="1" table_alias_name="" unitHeight="pixels" unitWidth="pixels" widget="WebComponent" width="200">
+        <DynamicProperty name="webcomponent.index" value=""/>
+      </WebComponent>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAxADIAYgAyADQAOQA5AGEALQAwAGMANwAxAC0ANAAxAGUAZgAtAGIAYwBmADIALQBmADkAZQBhADkAMwAxAGMAMgAxADEAYQB9AAAAAAAAAAAAAAAAAAAAAD9wYk3S8an8AQAAAEwAewBmAGYANAA0AGYANwBlAGUALQBmAGQAZQAwAC0ANABkADkAYwAtAGEAMwA4ADkALQAxAGYAMABhADUAMwBhADkAZgBlADgANgB9QCQAAAAAAABAQoAAAAAAAD9QYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>
