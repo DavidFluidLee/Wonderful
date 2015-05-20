@@ -15,6 +15,8 @@ MAIN
             
            ON ACTION EXIT
            EXIT INPUT
+
+           #
             
     END INPUT
 
