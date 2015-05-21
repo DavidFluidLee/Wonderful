@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>登录界面</title>
+
+<script>
+(function (doc, win) {
+          var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+              var clientWidth = docEl.clientWidth;
+              if (!clientWidth) return;
+              docEl.style.fontSize = 20 * (clientWidth / 300) + 'px';
+            };
+          
+          if (!doc.addEventListener) return;
+          win.addEventListener(resizeEvt, recalc, false);
+          doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+    <style>
+body,html{
+	height: 100%;
+	width: 100%;
+	background-color: #315FA5;
+	margin: 0;
+	    }
+.div_page-login_table{/*page-login登陆table容器DIV样式*/
+	z-index:1; 
+	position:absolute;
+	left:5%; 
+	top:7rem;
+	background-color: #fff;
+	border-radius: 10px;
+	border-width: 1px 0 1px;
+	border: 1px !important;
+}
+.div_page-login_input{/*page-login界面背景图片容器DIV样式*/
+	z-index:1; 
+	position:absolute;
+	left:15%; 
+	top:16rem;
+	/*margin-top: 2px;*/
+}
+
+input{
+	width: 100%;
+	height: 40px;
+	border: #fff;
+}
+    </style>
+</head>
+<body>
+<div >
+	<img src="image/LoginPage_bak.png" width="100%" >
+</div>
+<div  width="100%">
+	<!--<img src="Login_input.png" class="div_page-login_table" width="90%">-->
+	<table  width="90%" class="div_page-login_table">
+		<tr>
+			<td width="14%" align="center"><img src="image/user.png"  width="50%"></td>
+			<td width="72%" align="left"><input type="text"  id="username"  placeholder="账号" data-role="none"  /></td>
+			<td width="14%" align="center"><img src="image/title.png"  width="20%"></td>
+		</tr>
+		<tr>
+			<td width="14%" align="center"><img src="image/password.png"  width="50%"></td>
+			<td width="72%" align="left"><input type="text"  id="username"  placeholder="密码" data-role="none" /></td>
+			<td width="14%" align="center"></td>
+		</tr>
+		<tr>
+			<td width="14%" align="center"><img src="image/more.png"  width="50%"></td>
+			<td width="72%" align="left"><input type="text"  id="username"  placeholder="营运中心" data-role="none" /></td>
+			<td width="14%" align="center"></td>
+		</tr>
+
+	</table>
+
+<div  width="100%" onclick="window.location='navbar.html'" style="margin-top: 2px">
+	<img src="image/btn_login.png" class="div_page-login_input" width="70%">
+</div>
+</body>
+
+</html>

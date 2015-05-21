@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WorkspaceViewState version="1.0">
+  <ExpandedNodes>
+    <Node path="/Wonderful.4pw" type="pm/main-project"/>
+    <Node path="/Wonderful.4pw/Packages" type="pm/group"/>
+    <Node path="/Wonderful.4pw/Project" type="pm/group"/>
+    <Node path="/Wonderful.4pw/Project/Config" type="pm/library"/>
+    <Node path="/Wonderful.4pw/Project/Database" type="pm/library"/>
+    <Node path="/Wonderful.4pw/Project/Resources" type="pm/library"/>
+  </ExpandedNodes>
+  <OpenDocuments>
+    <Document filePath="natvie/main.4gl" locator="" module="mod-ce3"/>
+  </OpenDocuments>
+  <CurrentDocument filePath="natvie/main.4gl" module="mod-ce3"/>
+</WorkspaceViewState>
