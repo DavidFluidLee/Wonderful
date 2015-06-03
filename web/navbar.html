@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
     <title>导航界面</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
 
 <script>
 (function (doc, win) {
@@ -20,116 +21,71 @@
           doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
 </script>
-    <style>
-body,html{
-	height: 100%;
-	width: 100%;
-	background-color: #fff;
-	margin: 0;
-}
-h3{
-	color: #315FA5;
-	margin-left: 1rem;
-}
 
-#content {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-
-}
-.list_top{
-	border-top:solid 1px #315FA5;
-}
-.list_right{
-	border-right:solid 1px #315FA5;
-}
-.list_bottom{
-	float:left;
-	display: inline-block !important ;
-	width: 49.8%;
-	height: 100px;
-	border-bottom:solid 1px #315FA5;
-}
-.list_bottom:hover{
-	background-color: #315FA5;
-}
-.img_list{
-	height: 50px;
-	margin-top: 25px;
-}
-.bottom_btn{
-	font-size: 0.5rem;
-	color: #fff;
-	font-weight: 100;
-	}
-.footer{
-	width: 100%;
-	background-color: #315FA5;
-	height: 40px;
-	line-height: 40px;
-	position: fixed;
-	bottom: 0;
-	}
-.footer_ul{
-  -webkit-padding-start: 0;
-  padding-start: 0;
-  margin: 0;
-  
-}
-.footer_li{
-	float:left;
-	margin:0;
-	padding:0;
-	display:inline;
-	list-style-type:none;
-	white-space:nowrap;
-	margin: 0;
-	width: 25%;
-
-}
-</style>
 </head>
 <body>
 <header>
 	<h3>TIP TOP</h3>
 </header>
-<div id="content">
-<!--<ul>
-	<li class="list"><img src="list0101.png" class="img_list"></li>
-	<li class="list"><img src="list0201.png" class="img_list"></li>
-	<li class="list_bottom"><img src="list0301.png" class="img_list"></li>
-	<li class="list_bottom"><img src="list0401.png" class="img_list"></li>
-</ul>-->
-	<div class="list_top list_bottom list_right" id="listmenu_1"><img src="image/list0101.png" class="img_list" onmousemove="changeimg(this,'010')" onmousedown=""></div>
-	<div class="list_top list_bottom " id="listmenu_2"><img src="image/list0201.png" class="img_list"></div>
-	<div class="list_bottom list_right" id="listmenu_3"> <img src="image/list0301.png" class="img_list"></div>
-	<div class="list_bottom " id="listmenu_4"> <img src="image/list0401.png" class="img_list"></div>
-	<div class="list_bottom list_right" id="listmenu_5"> <img src="image/list0501.png" class="img_list"></div>
-	<div class="list_bottom " id="listmenu_6"> <img src="image/list0601.png" class="img_list"></div>
-	<div class="list_bottom list_right" id="listmenu_7"> <img src="image/list0701.png" class="img_list"></div>
-	<div class="list_bottom " id="listmenu_8"> <img src="image/list0801.png" class="img_list"></div>	
+<div id="content" class="ui-content">
+
+	<div class="list list_top list_bottom list_right" id="listmenu_1"  onmouseover="changeimg('list01','010')"onmouseout="changeimgback('list01','010')" onclick="window.location='test.html'">
+		<img id='list01' src="image/list0101.png" class="img_list">
+	</div>
+	<div class="list list_top list_bottom " id="listmenu_2" onmouseover="changeimg('list02','020')"onmouseout="changeimgback('list02','020')" onclick="window.location='02_functionview.html'">
+		<img id='list02' src="image/list0201.png" class="img_list">
+		</div>
+	<div class="list list_bottom list_right" id="listmenu_3" onmouseover="changeimg('list03','030')"onmouseout="changeimgback('list03','030')"> 
+		<img id='list03' src="image/list0301.png" class="img_list">		
+	</div>
+	<div class="list list_bottom " id="listmenu_4" onmouseover="changeimg('list04','040')"onmouseout="changeimgback('list04','040')"> 
+		<img id='list04' src="image/list0401.png" class="img_list">
+	</div>
+	<div class="list list_bottom list_right" id="listmenu_5" onmouseover="changeimg('list05','050')"onmouseout="changeimgback('list05','050')"> 
+		<img id='list05' src="image/list0501.png" class="img_list">
+	</div>
+	<div class="list list_bottom " id="listmenu_6" onmouseover="changeimg('list06','060')"onmouseout="changeimgback('list06','060')"> 
+		<img id='list06' src="image/list0601.png" class="img_list">
+	</div>
+	<div class="list list_bottom list_right" id="listmenu_7" onmouseover="changeimg('list07','070')"onmouseout="changeimgback('list07','070')"> 
+		<img id='list07' src="image/list0701.png" class="img_list">
+	</div>
+	<div class="list list_bottom " id="listmenu_8" onmouseover="changeimg('list08','080')"onmouseout="changeimgback('list08','080')"> 
+		<img id='list08' src="image/list0801.png" class="img_list">
+	</div>	
 </div>
-<div class="footer" align="center">
-	        <ul class="footer_ul">
-            <li name="footer"  class="footer_li" onclick="randomSwitchBtn2(this,'cloud',0)">
-                <a class="bottom_btn "> 采购管理 </a>
-            </li>
-
-            <li name="footer"  class="footer_li" onclick="randomSwitchBtn(this,'client',1)">
-                <a class="bottom_btn  "> 销售管理 </a>
-            </li>
-
-            <li name="footer" class="footer_li" onclick="randomSwitchBtn(this,'dev',2)">
-                <a class="bottom_btn  "> 条码管理 </a>
-            </li>
-
-            <li name="footer" class="footer_li" onclick="randomSwitchBtn(this,'doc',3)">
-                <a class="bottom_btn  "> 库存管理 </a>
-            </li>
-        </ul>
+<div>
+	<div class="fotter_title div_border_top"> <img src="image/title.png" width="10px" class="title_img"></div>
+	<div class="ui-footer-fixed ui-footer" align="center">
+		    <ul class="footer_ul">
+	            <li name="footer"  class="footer_li" >
+	                <a class="bottom_btn "> 采购管理 </a>
+	            </li>
+	
+	            <li name="footer"  class="footer_li">
+	                <a class="bottom_btn  "> 销售管理 </a>
+	            </li>
+	
+	            <li name="footer" class="footer_li">
+	                <a class="bottom_btn  "> 条码管理 </a>
+	            </li>
+	
+	            <li name="footer" class="footer_li">
+	                <a class="bottom_btn  "> 库存管理 </a>
+	            </li>
+	        </ul>
+	</div>
 </div>
 </body>
 <script>
+	function changeimg(obj,imgsrc){
+		var tag=document.getElementById(obj)
+		tag.setAttribute('src', 'image/list'+imgsrc+'2.png');
+	}
+	function changeimgback(obj,imgsrc){
+		var tag=document.getElementById(obj)
+		tag.setAttribute('src', 'image/list'+imgsrc+'1.png');
+	}
+
 	</script>
 </html>

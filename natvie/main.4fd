@@ -16,9 +16,9 @@
   <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="rec" order="" uid="{12b2499a-0c71-41ef-bcf2-f9ea931c211a}" where="">
     <RecordField colName="" fieldIdRef="1" name="web1" sqlTabName="" table_alias_name="" uid="{ff44f7ee-fde0-4d9c-a389-1f0a53a9fe86}"/>
   </Record>
-  <Form gridHeight="20" gridWidth="51" image="36x36" name="form" text="企业移动化">
+  <Form fourSTFile="" gridHeight="20" gridWidth="51" image="36x36" name="form" style="" text="企业移动化">
     <Grid gridHeight="20" gridWidth="51" name="grid1" posX="0" posY="0">
-      <WebComponent colName="" componentType="index" fieldId="1" gridHeight="20" gridWidth="50" height="500" name="web1" posX="1" posY="0" scrollBars="none" sizePolicy="fixed" sqlTabName="" stretch="both" tabIndex="1" table_alias_name="" unitHeight="pixels" unitWidth="pixels" widget="WebComponent" width="200">
+      <WebComponent colName="" componentType="index" fieldId="1" gridHeight="20" gridWidth="50" height="500" name="web1" posX="1" posY="0" scrollBars="none" sizePolicy="initial" sqlTabName="" stretch="both" tabIndex="1" table_alias_name="" unitHeight="pixels" unitWidth="pixels" widget="WebComponent" width="200">
         <DynamicProperty name="webcomponent.index" value=""/>
       </WebComponent>
     </Grid>

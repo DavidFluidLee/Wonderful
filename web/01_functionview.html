@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+    <title>01_functionciew</title>
+
+<script>
+(function (doc, win) {
+          var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+              var clientWidth = docEl.clientWidth;
+              if (!clientWidth) return;
+              docEl.style.fontSize = 20 * (clientWidth / 300) + 'px';
+            };
+          
+          if (!doc.addEventListener) return;
+          win.addEventListener(resizeEvt, recalc, false);
+          doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+
+</head>
+<body>
+<div data-role='page' class="ui-page">
+	<div class="center div_top">
+		<table width="100%">
+			<tr>
+				<td><label class="label1" >类型</label></td>
+				<td>
+					
+				<select  class="input_top " >  
+				  <option value ="1">1.直上柜</option>  
+				  <option value ="2">2.配送</option>  
+				</select>  
+					
+			</tr>
+			<tr>
+				<td><label class="label1 ">采购单／板码</label></td>
+				<td><input class="input_top " type="text"/></td>
+			</tr>
+		</table>
+	</div>
+	<div data-role='content' class="center  content div_border_top ui-content" >
+		<div class=" content_left div_inline_block ">
+			<label class="label1 div_block " >产品条码</label>
+			<label class="label1 div_block " >商品</label>
+			<label class="label1 div_block " >规格</label>
+			<label class="label1 div_block " >采购数量</label>
+			<label class="label1 div_block " >收获数量</label>
+			<label class="label1 div_block " >单位</label>
+			<label class="label1 div_block " >保质期</label>
+			<label class="label1 div_block " >保质期</label>
+		</div><div class="content_right div_inline_block div_border_left">
+			<label class="label1 div_block div_border_bottom" >abc-abc-1234</label>
+			<label class="label1 div_block div_border_bottom" >电脑</label>
+			<label class="label1 div_block div_border_bottom" >202179</label>
+			<label class="label1 div_block div_border_bottom" >4000</label>
+			<label class="label1 div_block div_border_bottom" >4000</label>
+			<label class="label1 div_block div_border_bottom" >20</label>
+			<label class="label1 div_block " >3月20日</label>
+		</div>
+	</div>
+	<div class="fotter_bar center div_border_top" style="height: 50px; width: 100%"> 
+		<ul class="footer_ul">
+			<li name="footer"  class="footer_li_3" onclick="randomSwitchBtn2(this,'cloud',0)">
+				<img src="image/list0101.png" height="40px">
+			</li>
+			<li name="footer"  class="footer_li_3" onclick="randomSwitchBtn(this,'client',1)">
+				<label class="label1  " >1</label>
+				<label class="label1  " >2</label>
+				<label class="label1  " >3</label>
+				<label class="label1  " >4</label>
+			</li>
+			<li name="footer" class="footer_li_3" onclick="randomSwitchBtn(this,'dev',2)">
+				<img src="image/lock-01.png" height="30px">
+			</li>
+		</ul>
+	</div>
+	<div class="ui-footer-fixed ui-footer" align="center">
+		<ul class="footer_ul">
+			<li name="footer"  class="footer_li_3" onclick="randomSwitchBtn2(this,'cloud',0)">
+				<a class="bottom_btn "> 商品笔数 : 20|</a>
+			</li>
+			<li name="footer"  class="footer_li_3" onclick="randomSwitchBtn(this,'client',1)">
+				<input type="text" class="fotter_input "/>
+				<a class="bottom_btn ">GO | </a>			</li>
+			<li name="footer" class="footer_li_3" onclick="randomSwitchBtn(this,'dev',2)">
+				<a class="bottom_btn  " href="navbar.html"> 返回菜单 </a>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+    <title>02_functionciew</title>
+<script src="script/time_selector.js"></script>
+<script src="script/add_node.js">
+<script>
+(function (doc, win) {
+          var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+              var clientWidth = docEl.clientWidth;
+              if (!clientWidth) return;
+              docEl.style.fontSize = 20 * (clientWidth / 300) + 'px';
+            };
+          
+          if (!doc.addEventListener) return;
+          win.addEventListener(resizeEvt, recalc, false);
+          doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+
+</head>
+<body>  
+    <div id="mainer">  
+<div id="left-top-search" class="center div_border_bottom">
+		
+		<table width="100%">
+			<tr>
+				<td><label class="label1" >类型</label></td>
+				<td>
+					
+				<select  class="input_top " >  
+				  <option value ="1">1.直上柜</option>  
+				  <option value ="2">2.配送</option>  
+				</select>  
+					
+			</tr>
+			<tr>
+				<td><label class="label1 ">采购单／板码</label></td>
+				<td><input class="input_top " type="text"/></td>
+			</tr>
+		</table>
+
+
+</div><!--left-top-search-->  
+<div id="left-center-list" class="center ">
+		<div class=" content_left div_inline_block " height='auto'>
+			<label class="label1 div_block div_border_bottom2" style="display: inherit;">产品条码</label>
+			<img src="image/edit.png" width="10px" class="div_border_bottom2">
+			<label class="label1 div_block div_border_bottom2" >商品</label>
+			<label class="label1 div_block div_border_bottom2" >规格</label>
+			<label class="label1 div_block div_border_bottom2" >采购数量</label>
+			<label class="label1 div_block div_border_bottom2" style="display: inherit;">收货数量</label>
+			<img src="image/edit.png" height="10px" class="div_border_bottom2">
+			<label class="label1 div_block div_border_bottom2" >单位</label>
+			<label class="label1 div_block div_border_bottom2" style="display: inherit;">保质期</label>
+			<img src="image/edit.png" height="10px" class="div_border_bottom2">
+		</div><div id='content_ul'class="content_right div_inline_block div_border_left ">
+		<ul id='content_ul'><li class=" div_inline " id='li_1' >
+			<input type="text" class="content_input label1 div_block div_border_bottom" value="abc-abc-1234"/>
+			<input type="text" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
+			<input type="text" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
+			<input type="text" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
+			<input type="number" class="content_input label1 div_block div_border_bottom" value="3000"/>
+			<input type="text" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
+			<input type="text" class="content_input label1 div_block div_border_bottom" onfocus="HS_setDate(this)" readonly="true"/>
+		</li>
+		</ul>
+	</div>
+	<div class="dir_right" id='btn_2'><img src="image/left.png" class="dir_img">
+	</div>
+	<div class="dir_left" id='btn_1'><img src="image/right.png" class="dir_img">
+	</div>
+</div>
+<div id="left-center-table2" class="center div_border_top"> 	
+		<ul class="footer_ul">
+			<li name="footer"  class="footer_li_3">
+				<img src="image/list0101.png" height="40px">
+			</li>
+			<li name="footer"  class="footer_li_3" id="bar_num">
+				<label class="label1 num_big" id='num_0'>1</label>
+				<label class="label1" id='num_1 '>2</label>
+				<label class="label1" id='num_2'>3</label>
+				<label class="label1" id='num_3'>4</label>
+			</li>
+			<li name="footer" class="footer_li_3" >
+				<img id='save_btn' src="image/lock-01.png" height="30px">
+			</li>
+		</ul>
+</div>  
+  
+<div id="left-center-table" class="center"> 
+
+	<ul class="footer_ul">
+		<li name="footer"  class="footer_li_3" >
+			<a class="bottom_btn "> 商品笔数 : 20|</a>
+		</li>
+		<li name="footer"  class="footer_li_3" >
+			<input type="number" class="fotter_input " id='input_num'/>
+			<label  class="bottom_btn" id='label_GO'>GO | </label>			</li>
+		<li name="footer" class="footer_li_3">
+			<a class="bottom_btn  " href="navbar.html"> 返回菜单 </a>
+		</li>
+	</ul>
+</div>  
+    </div>  
+</body>
+<script>
+var btn_save=document.getElementById('save_btn');
+	btn_save.onclick=function(){
+	btn_save.setAttribute('src', 'image/lock-02.png');
+	}
+var btn_GO=document.getElementById('label_GO');
+	btn_GO.onclick=function(){
+		var num_input=document.getElementById("input_num").value;
+		num_input=((num_input=='')?'0':num_input);
+		num_input=parseInt(num_input);
+		change_num(num_input);
+	}
+var nStartY=0;
+var nStartX=0;
+var nChangX=0;
+var nChangY=0;
+var flag=true;
+var target_move=document.getElementById('content_ul');
+var clientWidth=target_move.offsetWidth;
+ target_move.addEventListener('touchstart', function (e) {
+        nStartY = e.targetTouches[0].pageY;
+        nStartX = e.changedTouches[0].screenX;
+        //event.preventDefault();
+    });
+/* target_move.addEventListener('touchmove', function (e) {
+        nChangY = e.changedTouches[0].pageY;
+        nChangX = e.changedTouches[0].screenX;
+        if(flag){
+	        if(nChangX-nStartX<(0-clientWidth/3)){
+		      alert('touchmove');
+		      create_div(document.getElementById('li_0'));
+	        }
+        }
+        })
+*/
+target_move.addEventListener('touchend', function (e) {
+	//alert('test')
+        nChangY = e.changedTouches[0].pageY;
+        nChangX = e.changedTouches[0].screenX;
+     //   alert(nChangX)
+        if(nChangX-nStartX<(0-clientWidth/3)){
+			var target=document.getElementsByClassName('num_big');
+			var num=target[0].innerHTML;
+			var page_num=parseInt(num)+1;
+			next_div(document.getElementById('li_'+num),page_num);
+        }
+        if(nChangX-nStartX>(clientWidth/3)){
+			var target=document.getElementsByClassName('num_big');
+			var num=target[0].innerHTML;
+			var page_num=parseInt(num)-1;
+			pre_div(document.getElementById('li_'+num),page_num);
+        }   
+})
+document.getElementById('btn_2').onclick=function(){
+	var target=document.getElementsByClassName('num_big');
+	var num=target[0].innerHTML;
+	var page_num=parseInt(num)+1;
+	next_div(document.getElementById('li_'+num),page_num);
+}
+document.getElementById('btn_1').onclick=function(){
+	var target=document.getElementsByClassName('num_big');
+	var num=target[0].innerHTML;
+	var page_num=parseInt(num)-1;
+	pre_div(document.getElementById('li_'+num),page_num);
+}
+
+</script>
+</html>
