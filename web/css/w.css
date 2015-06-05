@@ -1,0 +1,128 @@
+html,body {
+	margin:0;
+	height:100%;
+	background-color:#f4f4f4;
+	}
+h1{
+	margin:0;
+	}
+ul, menu, dir {
+  display: block;
+  margin: 0;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
+li{
+	list-style-type:none;
+}
+div[data-w_role=page]{
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	position: absolute;
+	display: none;
+	border: 0;
+	display: block;
+	overflow: visible;
+	overflow-x: hidden;
+	
+	}
+div[data-w_role=header]{
+	background-color:#FFF;
+	color: #315FA5;
+	border-width: 1px 0;
+	border-style: solid;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	z-index: 1000;
+	top: -1px;
+	padding-bottom: 1px;
+	display:block;
+	text-align: center;
+	}
+div[data-w_role=content]{
+	background-color:#FFF;
+	color:#000;
+	border-width: 0;
+	height: 71%;
+	overflow: visible;
+	overflow-x: hidden;
+	display:block;
+	padding:80px;
+	}
+div[data-w_role=footer]{
+	width:100%; 
+	background-color:#315FA5;
+	color:#fff;
+	border-width: 1px 0;
+	border-style: solid;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 9%;
+	position: fixed;
+	z-index: 1000;
+	bottom: -1px;
+	padding-bottom: 1px;
+	display:block;
+}
+div[data-w_role=footer_bar]{
+	background-color:#fff;
+	color:#fff;
+	border-width: 1px 0;
+	border-style: solid;
+	left: 0;
+	right: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	bottom: 9%;
+	padding-bottom: 1px;
+	display:block;
+}
+.ui-header:empty,
+.ui-footer:empty {
+	min-height: 2.6875em;
+}
+div[data-w_role=header] >input{
+	color:#fff;
+	background-color: #315FA5;
+	font-size: 14px;
+	width: 80%;
+}
+div[data-w_role=footer_bar] li,div[data-w_role=footer] li{
+	display:inline;
+	text-align: center;
+}
+div[data-w_role=footer] li{
+	margin: 5%;
+}
+div[data-w_role=footer_bar] li,div[data-w_role=footer_bar] ul{
+	margin:1% 8% 1% 8%;
+	-webkit-margin-before: 0.5em;
+	-webkit-margin-after: 0.5em;
+}
+.content_left ul li{
+	margin: 19px 0 !important;
+}
+.div_border_right ul li label,.div_border_right ul li img{
+	display: inline !important;
+
+}
+.content_right ul li input{
+	height: 38.2px; 
+	}
+.content_right ul li{
+	top:81px;
+}
+.content_right,.content_left{
+	display:inherit;
+}

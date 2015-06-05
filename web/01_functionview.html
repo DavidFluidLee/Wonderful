@@ -1,98 +1,176 @@
-<!doctype html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
-    <link rel="stylesheet" type="text/css" href="css/app.css"/>
-    <title>01_functionciew</title>
-
-<script>
-(function (doc, win) {
-          var docEl = doc.documentElement,
-            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-            recalc = function () {
-              var clientWidth = docEl.clientWidth;
-              if (!clientWidth) return;
-              docEl.style.fontSize = 20 * (clientWidth / 300) + 'px';
-            };
-          
-          if (!doc.addEventListener) return;
-          win.addEventListener(resizeEvt, recalc, false);
-          doc.addEventListener('DOMContentLoaded', recalc, false);
-})(document, window);
-</script>
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/w.css"/>
+<link rel="stylesheet" type="text/css" href="css/app.css"/>
+<script src="script/time_selector.js"></script>
+<script src="script/add_node.js"></script>
 </head>
 <body>
-<div data-role='page' class="ui-page">
-	<div class="center div_top">
-		<table width="100%">
+
+<div data-w_role="page">
+    <div data-w_role="header" align="center">
+   		<table width="100%" style="height:100%; ">
 			<tr>
 				<td><label class="label1" >类型</label></td>
 				<td>
-					
 				<select  class="input_top " >  
 				  <option value ="1">1.直上柜</option>  
 				  <option value ="2">2.配送</option>  
 				</select>  
-					
 			</tr>
 			<tr>
 				<td><label class="label1 ">采购单／板码</label></td>
 				<td><input class="input_top " type="text"/></td>
 			</tr>
 		</table>
-	</div>
-	<div data-role='content' class="center  content div_border_top ui-content" >
-		<div class=" content_left div_inline_block ">
-			<label class="label1 div_block " >产品条码</label>
-			<label class="label1 div_block " >商品</label>
-			<label class="label1 div_block " >规格</label>
-			<label class="label1 div_block " >采购数量</label>
-			<label class="label1 div_block " >收获数量</label>
-			<label class="label1 div_block " >单位</label>
-			<label class="label1 div_block " >保质期</label>
-			<label class="label1 div_block " >保质期</label>
-		</div><div class="content_right div_inline_block div_border_left">
-			<label class="label1 div_block div_border_bottom" >abc-abc-1234</label>
-			<label class="label1 div_block div_border_bottom" >电脑</label>
-			<label class="label1 div_block div_border_bottom" >202179</label>
-			<label class="label1 div_block div_border_bottom" >4000</label>
-			<label class="label1 div_block div_border_bottom" >4000</label>
-			<label class="label1 div_block div_border_bottom" >20</label>
-			<label class="label1 div_block " >3月20日</label>
+    </div>
+    <div data-w_role="content" align="center">
+    		<div class="content_left  div_border_right">
+				<ul><li><label class="label1 div_block div_border_bottom2" style="display: inherit;">产品条码</label>
+				<img src="image/edit.png" width="10px" class="div_border_bottom2">
+				</li>
+				<li><label class="label1 div_block div_border_bottom2" >商品</label></li>
+				<li><label class="label1 div_block div_border_bottom2" >规格</label></li>
+				<li><label class="label1 div_block div_border_bottom2" >采购数量</label></li>
+				<li><label class="label1 div_block div_border_bottom2" style="display: inherit;">收货数量</label>
+				<img src="image/edit.png" height="10px" class="div_border_bottom2"></li>
+				<li><label class="label1 div_block div_border_bottom2" >单位</label></li>
+				<li><label class="label1 div_block div_border_bottom2" style="display: inherit;">保质期</label>
+				<img src="image/edit.png" height="10px" class="div_border_bottom2"></li></ul>
 		</div>
-	</div>
-	<div class="fotter_bar center div_border_top" style="height: 50px; width: 100%"> 
-		<ul class="footer_ul">
-			<li name="footer"  class="footer_li_3" onclick="randomSwitchBtn2(this,'cloud',0)">
-				<img src="image/list0101.png" height="40px">
-			</li>
-			<li name="footer"  class="footer_li_3" onclick="randomSwitchBtn(this,'client',1)">
-				<label class="label1  " >1</label>
-				<label class="label1  " >2</label>
-				<label class="label1  " >3</label>
-				<label class="label1  " >4</label>
-			</li>
-			<li name="footer" class="footer_li_3" onclick="randomSwitchBtn(this,'dev',2)">
-				<img src="image/lock-01.png" height="30px">
-			</li>
+		<div class="content_right"><ul id='content_ul'><li class="vs-current div_content div_border_left" id='li_1' >
+				<input type="text" id="input1_0" class="content_input label1 div_block div_border_bottom" value="abc-abc-1234"/>
+				<input type="text" id="input2_0" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
+				<input type="text" id="input3_0" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
+				<input type="text" id="input4_0" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
+				<input type="number" id="input4_0" class="content_input label1 div_block div_border_bottom" value="3000"/>
+				<input type="text" id="input5_0" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
+				<input type="text" id="input6_0" class="content_input label1 div_block div_border_bottom" onfocus="HS_setDate(this)" readonly="true"/>
+		</li><li class="vs-right div_content div_border_left" id='li_2' >
+			<input type="text" id="input1_0" class="content_input label1 div_block div_border_bottom" value=""/>
+				<input type="text" id="input2_0" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
+				<input type="text" id="input3_0" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
+				<input type="text" id="input4_0" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
+				<input type="number" id="input4_0" class="content_input label1 div_block div_border_bottom" value=""/>
+				<input type="text" id="input5_0" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
+				<input type="text" id="input6_0" class="content_input label1 div_block div_border_bottom" onfocus="HS_setDate(this)" readonly="true"/>
+		</li>
 		</ul>
 	</div>
-	<div class="ui-footer-fixed ui-footer" align="center">
-		<ul class="footer_ul">
-			<li name="footer"  class="footer_li_3" onclick="randomSwitchBtn2(this,'cloud',0)">
-				<a class="bottom_btn "> 商品笔数 : 20|</a>
-			</li>
-			<li name="footer"  class="footer_li_3" onclick="randomSwitchBtn(this,'client',1)">
-				<input type="text" class="fotter_input "/>
-				<a class="bottom_btn ">GO | </a>			</li>
-			<li name="footer" class="footer_li_3" onclick="randomSwitchBtn(this,'dev',2)">
-				<a class="bottom_btn  " href="navbar.html"> 返回菜单 </a>
-			</li>
-		</ul>
+	<div class="dir_right" id='btn_prev'><img src="image/left.png" class="dir_img">
 	</div>
-</div>
-</body>
+	<div class="dir_left" id='btn_next'><img src="image/right.png" class="dir_img">
+	</div>
 
+</div>
+	<div data-w_role="footer_bar" align="center" class="div_border_top">
+	<ul style="background-color: #fff">
+			<li >
+				<img src="image/list0101.png" height="35px">
+			</li>
+			<li id="bar_num">
+				<label class="label1 num_big" id='num_0'>1</label>
+				<label class="label1" id='num_1 '>2</label>
+				<label class="label1" id='num_2'>3</label>
+				<label class="label1" id='num_3'>4</label>
+			</li>
+			<li name="footer">
+				<img id='save_btn' src="image/lock-01.png" height="30px">
+			</li>
+		</ul>
+</div>
+    <div data-w_role="footer" align="center">
+
+	    
+    	<ul>
+		<li>
+			<a class="bottom_btn "> 商品笔数 : 20|</a>
+		</li>
+		<li>
+			<input type="number" class="fotter_input " id='input_num'/>
+			<label  class="bottom_btn" id='label_GO'>GO | </label>			</li>
+		<li>
+			<a class="bottom_btn  " href="navbar.html"> 返回菜单 </a>
+		</li>
+	</ul>
+
+    </div>
+</body>
+<script>
+var btn_save=document.getElementById('save_btn');
+	btn_save.onclick=function(){
+	btn_save.setAttribute('src', 'image/lock-02.png');
+	}
+var btn_GO=document.getElementById('label_GO');
+	btn_GO.onclick=function(){
+		var num_input=document.getElementById("input_num").value;
+		num_input=((num_input=='')?'0':num_input);
+		num_input=parseInt(num_input);
+		change_num(num_input);
+	}
+var nStartY=0;
+var nStartX=0;
+var nChangX=0;
+var nChangY=0;
+var flag=true;
+var target_move=document.getElementById('content_ul');
+var clientWidth=target_move.offsetWidth;
+
+ target_move.addEventListener('touchstart', function (e) {
+        nStartY = e.targetTouches[0].pageY;
+        nStartX = e.changedTouches[0].screenX;
+        //event.preventDefault();
+    });
+ target_move.addEventListener('touchmove', function (e) {
+        nChangY = e.changedTouches[0].pageY;
+        nChangX = e.changedTouches[0].screenX;
+  /*      if(flag){
+	        if(nChangX-nStartX<(0-clientWidth/3)){
+		      alert('touchmove');
+		      create_div(document.getElementById('li_0'));
+	        }
+        }*/
+		var target=document.getElementsByClassName('num_big');
+		var num=target[0].innerHTML;
+        var move_target=document.getElementById('li_'+num).style.left=nChangX;
+        })
+
+target_move.addEventListener('touchend', function (e) {
+	//alert('test')
+        nChangY = e.changedTouches[0].pageY;
+        nChangX = e.changedTouches[0].screenX;
+        if(nChangX-nStartX<(0-clientWidth/3)){
+			var target=document.getElementsByClassName('num_big');
+			var num=target[0].innerHTML;
+			var page_num=parseInt(num)+1;
+			next_div(target_move,page_num);
+			setTimeout(div_transform(page_num,'left',target_move),5000);
+        }
+        if(nChangX-nStartX>(clientWidth/3)){
+			var target=document.getElementsByClassName('num_big');
+			var num=target[0].innerHTML;
+			var page_num=parseInt(num)-1;
+			div_transform(page_num,'right',target_move);
+			change_num(page_num);
+        }   
+})
+document.getElementById('btn_prev').onclick=function(){
+	var target=document.getElementsByClassName('num_big');
+	var num=target[0].innerHTML;
+	var page_num=parseInt(num)+1;
+	next_div(target_move,page_num);
+	setTimeout(div_transform(page_num,'left',target_move),5000);
+}
+document.getElementById('btn_next').onclick=function(){
+	var target=document.getElementsByClassName('num_big');
+	var num=target[0].innerHTML;
+	var page_num=parseInt(num)-1;
+	div_transform(page_num,'right',target_move);
+	change_num(page_num);
+}
+
+</script>
 </html>

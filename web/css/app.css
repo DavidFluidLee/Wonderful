@@ -6,7 +6,7 @@ body,html{
 }
 ul, menu, dir {
   display: block;
-  margin: 0 !important;
+  margin: 0;
   list-style-type: disc;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
@@ -142,7 +142,6 @@ div[data-role=content] {
 }
 .div_block{
 	display:block;
-	padding: 0.78rem 0;
 }
 .div_flex{
 	display:inline-flex;
@@ -161,6 +160,9 @@ div[data-role=content] {
 }
 .div_border_left{
 		border-left:solid 1px #315FA5;
+}
+.div_border_right{
+		border-right:solid 1px #315FA5;
 
 }
 .div_border_top{
@@ -168,15 +170,21 @@ div[data-role=content] {
 
 }
 .content_left{
+	position: fixed;
+	left: 0;
 	width: 30%;
-	height: 100%;
+	height: 74%;
 	background-color: #fff;
-
+	z-index: 100;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 .content_right{
 	width: 69%;
-	height: 100%;
+	height: 74%;
 	background-color: #fff;
+	overflow-x: hidden;
+	overflow-y: scroll;
 
 }
 /*navbar*/
@@ -186,12 +194,12 @@ h3{
 }
 
 #content {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    overflow: visible;
-  overflow-x: hidden;
-
+	
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+	overflow: visible;
+	overflow-x: hidden;
 }
 .list{
 	float:left;
@@ -283,34 +291,44 @@ h3{
     z-index: 1; 
 }  
 /*huadong*/
-.div_inline{
-	display: inline;	
-	background-color: #fff;
-	vertical-align:top;
-}
+
 .div_none{
 	display: none;
 }
-.li_current {
-  right: 0;
-  position: absolute;
-  top:0;
-  left: 31%;
-  width: inherit;
+
+.div_content{
+	background-color: #fff;
+	width: 70%;
+	position: absolute;
+	border-left:solid 1px #315FA5;
+	border-right:solid 1px #315FA5;
 }
-.li_current {
-  right: 0;
-  position: absolute;
-  top:0;
-  left: 31%;
-  width: inherit;
+.vs-right {
+  left: 100%;
 }
-.vs-container {
-	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-	transition: transform 0.5s, opacity 0.5s;
+.vs-left {
+  left: -40%;
+
+}
+.vs-current {
+  left: 30%;
+}
+.btn{
+	position: relative;
+	display: inline;
+	z-index: 101;
+}
+.vs-move-right{
+	-webkit-transition: -webkit-transform 1s, opacity 1s;
+	transition: transform 1s, opacity 1s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);	
+}
+.vs-move-left{
+	-webkit-transition: -webkit-transform 1s, opacity 1s;
+	transition: transform 1s, opacity 1s;
 	-webkit-transform: translate3d(-100%,0,0);
-	transform: translate3d(-100%,0,0);
-	z-index: -1;
+	transform: translate3d(-100%,0,0);	
 }
 /*左右箭头*/
 .dir_img{
@@ -321,21 +339,20 @@ h3{
   top: 40%;
   left: 30%;
   color: rgb(121, 107, 107);
-  background-color: rgba(29, 28, 28, 0.47);
+  background-color: rgba(49, 95, 165, 0.62);
   width: 40px;
   height: 80px;
   border-radius: 30%;
-  z-index: 1001;	
 }
 .dir_right{
   position: fixed;
   top: 40%;
-  right: 20px;
+  right: 0;
   color: rgb(121, 107, 107);
-  background-color: rgba(29, 28, 28, 0.47);
+  background-color: rgba(49, 95, 165, 0.62);
   width: 40px;
   height: 80px;
   border-radius: 30%;	
-  z-index: 1001;
+
 
 }
