@@ -9,7 +9,6 @@ function HS_DateAdd(interval,number,date){
 	case "d":return new Date(date.getFullYear(),date.getMonth(),date.getDate()+number); break;
 	case "w":return new Date(date.getFullYear(),date.getMonth(),7*number+date.getDate()); break;
 	}
-	return false;
 }
 function checkDate(year,month,date){
 	var enddate = ["31","28","31","30","31","30","31","31","30","31","30","31"];

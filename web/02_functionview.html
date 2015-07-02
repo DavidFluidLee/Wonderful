@@ -16,20 +16,13 @@
               if (!clientWidth) return;
               docEl.style.fontSize = 20 * (clientWidth / 300) + 'px';
             };
+          
           if (!doc.addEventListener) return;
           win.addEventListener(resizeEvt, recalc, false);
           doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
 </script>
 
-<style>
-.li_active{
-	width: 150px;
-}
-.li_hidden{
-	display: none;
-}
-</style>
 </head>
 <body>  
     <div id="mainer">  
@@ -55,7 +48,7 @@
 
 </div><!--left-top-search-->  
 <div id="left-center-list" class="center ">
-		<div class=" content_left div_inline_block div_border_right" height='auto'>
+		<div class=" content_left div_inline_block " height='auto'>
 			<label class="label1 div_block div_border_bottom2" style="display: inherit;">产品条码</label>
 			<img src="image/edit.png" width="10px" class="div_border_bottom2">
 			<label class="label1 div_block div_border_bottom2" >商品</label>
@@ -66,8 +59,8 @@
 			<label class="label1 div_block div_border_bottom2" >单位</label>
 			<label class="label1 div_block div_border_bottom2" style="display: inherit;">保质期</label>
 			<img src="image/edit.png" height="10px" class="div_border_bottom2">
-		</div><div class="content_right div_inline_block ">
-		<ul id='content_ul'><li class="vs-current div_content div_border_left" id='li_1' >
+		</div><div id='content_ul'class="content_right div_inline_block div_border_left ">
+		<ul id='content_ul'><li class=" div_inline " id='li_1' >
 			<input type="text" class="content_input label1 div_block div_border_bottom" value="abc-abc-1234"/>
 			<input type="text" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
 			<input type="text" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
@@ -75,20 +68,12 @@
 			<input type="number" class="content_input label1 div_block div_border_bottom" value="3000"/>
 			<input type="text" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
 			<input type="text" class="content_input label1 div_block div_border_bottom" onfocus="HS_setDate(this)" readonly="true"/>
-		</li><li class="vs-right div_content div_border_left" id='li_2' >
-			<input type="text" class="content_input label1 div_block div_border_bottom" />
-			<input type="text" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
-			<input type="text" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
-			<input type="text" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
-			<input type="number" class="content_input label1 div_block div_border_bottom" value=""/>
-			<input type="text" class="content_input label1 div_block div_border_bottom" value=""  readonly="true"/>
-			<input type="text" class="content_input label1 div_block div_border_bottom" onfocus="HS_setDate(this)" readonly="true"/>
 		</li>
 		</ul>
 	</div>
-	<div class="dir_right" id='btn_prev'><img src="image/left.png" class="dir_img">
+	<div class="dir_right" id='btn_2'><img src="image/left.png" class="dir_img">
 	</div>
-	<div class="dir_left" id='btn_next'><img src="image/right.png" class="dir_img">
+	<div class="dir_left" id='btn_1'><img src="image/right.png" class="dir_img">
 	</div>
 </div>
 <div id="left-center-table2" class="center div_border_top"> 	
@@ -143,58 +128,51 @@ var nChangY=0;
 var flag=true;
 var target_move=document.getElementById('content_ul');
 var clientWidth=target_move.offsetWidth;
-
  target_move.addEventListener('touchstart', function (e) {
         nStartY = e.targetTouches[0].pageY;
         nStartX = e.changedTouches[0].screenX;
         //event.preventDefault();
     });
- target_move.addEventListener('touchmove', function (e) {
+/* target_move.addEventListener('touchmove', function (e) {
         nChangY = e.changedTouches[0].pageY;
         nChangX = e.changedTouches[0].screenX;
-  /*      if(flag){
+        if(flag){
 	        if(nChangX-nStartX<(0-clientWidth/3)){
 		      alert('touchmove');
 		      create_div(document.getElementById('li_0'));
 	        }
-        }*/
-		var target=document.getElementsByClassName('num_big');
-		var num=target[0].innerHTML;
-        var move_target=document.getElementById('li_'+num).style.left=nChangX;
+        }
         })
-
+*/
 target_move.addEventListener('touchend', function (e) {
 	//alert('test')
         nChangY = e.changedTouches[0].pageY;
         nChangX = e.changedTouches[0].screenX;
+     //   alert(nChangX)
         if(nChangX-nStartX<(0-clientWidth/3)){
 			var target=document.getElementsByClassName('num_big');
 			var num=target[0].innerHTML;
-			var page_num=parseInt(num);
+			var page_num=parseInt(num)+1;
 			next_div(document.getElementById('li_'+num),page_num);
         }
         if(nChangX-nStartX>(clientWidth/3)){
 			var target=document.getElementsByClassName('num_big');
 			var num=target[0].innerHTML;
-			var page_num=parseInt(num)-2;
+			var page_num=parseInt(num)-1;
 			pre_div(document.getElementById('li_'+num),page_num);
         }   
 })
-document.getElementById('btn_prev').onclick=function(){
+document.getElementById('btn_2').onclick=function(){
 	var target=document.getElementsByClassName('num_big');
 	var num=target[0].innerHTML;
 	var page_num=parseInt(num)+1;
-	next_div(target_move,page_num);
-	setTimeout(div_transform(page_num,'left',target_move),5000);
+	next_div(document.getElementById('li_'+num),page_num);
 }
-document.getElementById('btn_next').onclick=function(){
+document.getElementById('btn_1').onclick=function(){
 	var target=document.getElementsByClassName('num_big');
 	var num=target[0].innerHTML;
 	var page_num=parseInt(num)-1;
-	div_transform(page_num,'right',target_move);
-	change_num(page_num);
-
-
+	pre_div(document.getElementById('li_'+num),page_num);
 }
 
 </script>

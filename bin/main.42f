@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Form name="main.tmp" build="2.51.07" image="36x36" text="企业移动化" style="" width="52" height="20">
+<Form name="main.tmp" build="2.51.07" image="36x36" text="企业移动化" width="52" height="20">
   <LStr text="企业移动化"/>
   <Grid name="grid1" width="52" height="20">
     <FormField name="formonly.web1" colName="web1" fieldId="0" sqlTabName="formonly" tabIndex="1">
-      <WebComponent width="200px" scrollBars="none" sizePolicy="initial" stretch="both" componentType="index" height="500px" posY="0" posX="1" gridWidth="50" gridHeight="20"/>
+      <WebComponent width="200px" scrollBars="none" sizePolicy="fixed" stretch="both" componentType="index" height="500px" posY="0" posX="1" gridWidth="50" gridHeight="20"/>
     </FormField>
   </Grid>
   <RecordView tabName="formonly">
