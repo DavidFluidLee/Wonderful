@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <WorkspaceDatabase fileContentsEncoding="UTF-8" options="3" version="2.0">
-<File m="main" n="natvie/main.4gl" ts="20150521183145000">
-<Fct c="1" el="26" l="3" n="main()" t="F"/>
+<File m="main" n="natvie/main.4gl" ts="20150527151039000">
+<Fct c="1" el="24" l="3" n="main()" t="F"/>
 </File>
 </WorkspaceDatabase>
